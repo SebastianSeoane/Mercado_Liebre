@@ -1,0 +1,436 @@
+
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box; 
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+
+header {
+    background-color: #EAC926;
+    margin: 0px;;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+    margin: 10px;
+}
+
+
+
+.texto{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color : #666;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.footer_title{
+    font-weight : 900;
+    text-align: center;
+    color : #666;
+}
+
+.icon{
+    color: #1259c3;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 5px;
+    margin :10px;
+}
+
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+ul li{
+    padding-right: 20px;
+}
+
+a{
+    text-decoration : none;
+    color: black; 
+}
+
+#copyright{
+    color : #666;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+li{
+    font-size: 12px;
+}
+
+header div{
+    font-size: 12px;
+    color: black;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+header img{
+    padding-bottom: 0px;
+    padding-top: 15px;
+}
+
+.input{
+    float: left;
+    margin-left: 10px;
+    border-width: 0px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+}
+
+button{
+
+    margin-left: 3px;
+}
+
+#logo{
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+#message{
+    text-align: center;
+    margin: 10px;
+}
+
+.banner_container{
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+#banner{
+    width : 100%;
+    flex-shrink: 0;
+}
+
+main{
+    width : 100%;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.products{
+    width : 100%;
+    padding: 15px;
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    margin: auto;
+}
+
+.prod_im{
+    width : 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.im_container{
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.price {
+    font-size: 18px;
+    text-align: left;
+    flex-grow: 0.3;
+}
+
+.product{
+    font-size: 16px;
+    text-align: left;
+    color : #666;
+    font-weight : 200; 
+    display: none;
+}
+
+
+
+.product_disc{
+    font-size: 16px;
+    text-align: left;
+    color : #39b54a;
+    flex-grow: 0.7;
+}
+
+
+#truck{
+    text-align: right;
+    display: block;
+    font-size: 16px;
+    color : #39b54a;  
+    background-color: white;
+    right: 20px;
+    top: -15px;
+}
+
+#camion{
+    position: relative;
+    bottom: 28px;
+}
+
+
+main section article{
+    margin: 10px;
+}
+
+
+.item:hover{
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.item:hover > .products > .product{
+    display: block;
+}
+
+.item:hover > .products > #truck > #camion{
+    transform: rotateZ(-90deg);
+    transition: transform 1s;
+}
+
+
+@media screen and (min-width: 361px) {
+    
+
+    .product:hover{
+        display:block;        
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .listas{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .logo_barra_mensaje{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_barra{
+        width: 70%;
+    }
+
+    #message{
+        flex-grow: 34%;
+        align-self: center;
+    }
+
+    .sec{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec > * {
+        flex: 40%
+    }
+
+ 
+}
+
+@media screen and (min-width: 769px) {
+
+    .sec{
+        display : flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .flex_component{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+}
+
+.price_discount{
+    display: flex;
+}
+
+.logo_barra_mensaje{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#barra{
+    border: 0px;
+    border-radius:5px;
+    margin: 10px;
+    height: 35px;
+    padding: auto;
+    text-align: center;
+    display: flex;
+    width: 40%;
+}
+
+.search_form{
+    width: 100%;
+}
+
+#lupa{
+    color: gray;
+    padding-top: 10px;
+    text-align: right;
+    position:relative;
+    left: -20px;
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name, #user, #mail, #nacimiento, #domicilio, #contraseña, #repetircontraseña, .enviar, .borrar{
+    margin: 10px;
+    border: none;
+    height: 35px;
+    width: 80%;
+    border-radius:5px;
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+#title_forms{
+    width: 80%;
+    text-align: left;
+    max-width: 500px;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+#foto{
+    width: 80%;
+    text-align: left;
+    max-width: 500px;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.radio, .check{
+    width: 80%;
+    text-align: left;
+    max-width: 500px;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+#nacimiento{
+    padding-right: 20px;
+}
+
+#intereses{
+    justify-self: stretch;
+}
+
+.enviar{
+    color: white;
+    background-color : #1259c3;
+    font-weight: bold;
+}
+
+.borrar{
+    color: white;
+    background-color: rgb(121, 24, 24);
+    font-weight: bold;
+}
+
+.radio{
+    text-align: left;
+}
+
+#perfil{
+    margin-left: 20px;
+}
+
+.enviar:hover{
+    background-color: #0022AA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
